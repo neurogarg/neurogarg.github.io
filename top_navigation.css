@@ -12,6 +12,8 @@ body{
     color:white;
     justify-content: center;
     padding-top: 1em; 
+    margin-left: 3em;
+    margin-right: 3em;
   }
   
 
@@ -50,8 +52,7 @@ body{
 
   .nav-container>div {
       font-size: 1.4em;
-      width: 4.8em;
-      padding-left: .3em;
-      padding-right: .3em;
+      padding-left: .4em;
+      padding-right: .4em;
   }
 }
