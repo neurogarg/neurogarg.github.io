@@ -49,7 +49,8 @@ body{
 
   .nav-container>div {
       font-size: 1.4em;
-      padding-right: 5em;
-      padding-left: 5em;
+  }
+  .nav-container:hover{
+    border-color: black;
   }
 }
