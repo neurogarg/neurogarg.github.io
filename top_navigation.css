@@ -8,26 +8,25 @@ body{
 }
 
 .nav-container {
-    display: flex;
-    color:white;
-    justify-content: center;
-    padding-top: 1em; 
-    margin-left: 3em;
-    margin-right: 3em;
+  display: flex;
+  color:white;
+  justify-content: center;
+  padding-top: 1em; 
   }
   
 
- .nav-container > div {
+  .nav-container > div {
     text-align: center;
     font-size: 1.9em;
     position: relative;
+    width: 5em;
     height: .8em;  
+    padding-left: .5em;
+    padding-right: .5em;
     padding-bottom: .7em;
     padding-top:.35em;
     border: 1px solid transparent;
     border-radius: 20%;
-    padding-left: .5em;
-    padding-right: .5em;
   }
 
   .nav-container :hover {
@@ -48,9 +47,8 @@ body{
 
   .nav-container>div {
       font-size: 1.4em;
-      padding-left: .4em;
-    padding-right: .4em;
       border: none;
+      
   }
 
 }
