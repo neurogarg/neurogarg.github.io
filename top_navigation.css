@@ -49,6 +49,7 @@ body{
 
   .nav-container>div {
       font-size: 1.4em;
-      width: 3em;
+      padding-right: 3em;
+      padding-left: 3em;
   }
 }
