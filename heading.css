@@ -1,0 +1,42 @@
+.social_icon{
+    width: 2.1em;
+    height: auto;
+    padding-left: .7em;
+    padding-right: .7em;    
+}
+
+.icon_group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 4em; 
+    text-align: center; 
+    color: white; 
+    margin-bottom: .2em; 
+    margin-top: .2em;
+}
+
+.header_image{
+    width: 18em; 
+    height: auto;
+}
+
+@media screen and (max-width: 500px){
+    .heading{
+        font-size: 2.5em;
+    }
+
+    .social_icon{
+        width: 1.5em;
+        padding-right: .5em;
+        padding-right: .5em;
+    }
+
+    .header_image{
+        width:14em;
+    }
+}
