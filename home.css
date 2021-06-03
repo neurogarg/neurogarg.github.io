@@ -14,12 +14,6 @@
     line-height: 1;
     display: block;
 }
-
-@media screen and (max-width: 500px) {
-  .text1 {
-    width: 3em; 
-    }
-}
     
 .container2{
     color: white;
