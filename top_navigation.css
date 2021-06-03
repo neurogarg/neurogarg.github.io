@@ -26,6 +26,8 @@ body{
     padding-top:.35em;
     border: 1px solid transparent;
     border-radius: 20%;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
   .nav-container :hover {
