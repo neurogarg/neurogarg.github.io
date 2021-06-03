@@ -47,3 +47,17 @@ body{
 .a:hover{
   color: white;
   }
+
+@media screen and (max-width: 500px){
+  .nav-container{
+    padding-left: .7em;
+    padding-right: .7em;
+  }
+
+  .nav-container>div {
+      font-size: 1.4em;
+      width: 4.3em;
+      padding-left: .3em;
+      padding-right: .3em;
+  }
+}
