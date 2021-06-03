@@ -26,8 +26,8 @@ body{
     padding-top:.35em;
     border: 1px solid transparent;
     border-radius: 20%;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: .5em;
+    padding-right: .5em;
   }
 
   .nav-container :hover {
@@ -48,8 +48,8 @@ body{
 
   .nav-container>div {
       font-size: 1.4em;
-      padding-left: 2em;
-      padding-right: 2em;
+      padding-left: .4em;
+    padding-right: .4em;
       border: none;
   }
 
