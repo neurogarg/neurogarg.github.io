@@ -1,0 +1,41 @@
+
+.container1{
+    color: white;
+    top: 40vh;
+    right: 50vw;
+    text-align: center;
+    position: relative;
+    transform: translateY(-50%) translateX(50%);
+    z-index: 1;
+}
+
+.text1{
+    font-size: 5em;
+    line-height: 1;
+    display: block;
+}
+
+.container2{
+    color: white;
+    top: 40vh;
+    right: 50vw;
+    text-align: center;
+    position: relative;
+    transform: translateY(-50%) translateX(50%);
+    z-index: 1;
+}
+
+.text2{
+    font-size: 2em;
+    line-height: 1;
+    display: block;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#particles-js{ 
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+

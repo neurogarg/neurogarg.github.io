@@ -1,0 +1,13 @@
+.social_icon{
+    width: 2.1rem;
+    height: auto;
+    padding-left: .7em;
+    padding-right: .7em;    
+}
+
+.icon_group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

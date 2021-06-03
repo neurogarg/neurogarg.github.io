@@ -1,0 +1,49 @@
+body{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    color:white;
+    justify-content: center;
+    padding-top: 1em; 
+    padding-left: 1em;
+    padding-right: 1em;
+    }
+  
+
+ .nav-container > div {
+    text-align: center;
+    font-size: 1.9em;
+    position: relative;
+    width: 5em;
+    height: .8em;  
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-bottom: .7em;
+    padding-top:.35em;
+    border: 1px solid transparent;
+    border-radius: 20%;
+  }
+
+  .nav-container :hover {
+    border-color: white;
+    /* -moz-box-shadow:    inset 0 0 .5vw white;
+    -webkit-box-shadow: inset 0 0 .5vw white;
+    box-shadow:         inset 0 0 .5vw white; */
+} 
+
+ .a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+.a:hover{
+  color: white;
+}
