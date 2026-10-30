@@ -1,0 +1,22 @@
+# Pranjal Garg
+
+Pranjal Garg studies learning, neural dynamics, and computation in biological and artificial systems.
+
+## Published research
+- [Generalized contrastive PCA](https://doi.org/10.1371/journal.pcbi.1012747): Published in PLOS Computational Biology in 2025; the linked paper provides the full text and citation metadata.
+
+## Research projects
+- [Spontaneous Context Restoration](https://neurogarg.github.io/research.html#spontaneous-context-restoration): How language models recover from corrupted inputs, and whether intermediate representations predict recovery.
+- [MetaLex: metaphors across vision and language](https://neurogarg.github.io/research.html#metalex): A benchmark testing whether vision-language models recover the same figurative meanings from matched images and text.
+- [Active vision in Drosophila](https://neurogarg.github.io/research.html#active-vision): How retinal movements and neural activity let an animal reshape its own sensory input.
+- [Co-adaptive biological–artificial intelligence](https://neurogarg.github.io/research.html#co-adaptive-intelligence): How heterogeneous learners specialize, share representations, and reorganize after perturbation.
+
+## Site pages
+- [Index](https://neurogarg.github.io/)
+- [Research](https://neurogarg.github.io/research.html)
+- [Writings](https://neurogarg.github.io/writings.html)
+- [Neuroscience CV (PDF)](https://neurogarg.github.io/data/Pranjal_Garg_Neuro.pdf)
+- [AI Safety CV (PDF)](https://neurogarg.github.io/data/Pranjal_Garg_AI_Safety.pdf)
+- [Other work and interests](https://neurogarg.github.io/others.html)
+
+Research project descriptions do not establish publication status or complete authorship. Entries explicitly labeled Sample on the Writings page are fictional and must not be cited as research.

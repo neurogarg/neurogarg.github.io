@@ -1,0 +1,113 @@
+<header class="page-intro">
+  <h1>Neuroscience Projects</h1>
+</header>
+<section class="section" aria-label="Neuroscience projects">
+  <div class="work-list">
+<article class="work-entry paper" id="active-vision">
+      <img
+        class="project-image"
+        src="images/projects/active-vision-fly.png"
+        alt="Black-and-white close-up of a fruit fly's head and compound eye"
+        width="160"
+        height="160"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="project-content">
+        <div class="entry-heading">
+          <h3>Active vision in <em>Drosophila</em></h3>
+          <span class="entry-date">2024-2025</span>
+        </div>
+        <p class="work-meta">
+          Max Planck Institute for Biological Intelligence · with Lisa Fenk
+        </p>
+
+        <p>
+          I explored the idea if flies adjust their spontaneous retinal movements to visual scene characteristics.
+          I developed a saccade detection algorithm and analysed the relationship between saccade frequency and visual scene statistics of gratings and natural images.
+          Ball movements were also tracked to study the relationship between saccades and behavioural responses to visual stimuli.
+        </p>
+      <p class="project-tldr"><strong>TL;DR:</strong> Correlating retinal movements with
+         behavioural responses to visual stimuli, asking how an animal shapes its own sensory input through the loop between neural activity, body, and environment.</p>
+      </div>
+    </article>
+  <article class="work-entry paper" id="generalized-contrastive-pca">
+    <div class="project-image project-image-gcpca">
+      <span class="project-image-gcpca-crop">
+        <img src="images/projects/gcpca-low-variance-manifold.png" alt="Synthetic conditions A and B showing a low-variance manifold in condition A" loading="lazy" decoding="async" />
+      </span>
+    </div>
+    <div class="project-content">
+    <div class="entry-heading"><h3>Generalized contrastive PCA</h3><span class="entry-date">{{yearFromBib:de2025identifying}}</span></div>
+      <p class="work-meta">Albert Einstein College of Medicine · with Eliezyer de Oliveira and Luke Sjulson</p>
+    <p>We developed gcPCA, a hyperparameter-free method for finding low-dimensional patterns enriched in one of two high-dimensional datasets. Unlike contrastive PCA, it can compare conditions symmetrically and return a unique solution. We demonstrated it on synthetic data, hippocampal recordings, and single-cell RNA sequencing.</p>
+    <p class="project-tldr"><strong>TL;DR:</strong> Compare two high-dimensional datasets without choosing contrastive PCA’s α hyperparameter.</p>
+    <p><a href="https://doi.org/10.1371/journal.pcbi.1012747">Read the paper</a></p>
+    <details><summary>BibTeX for paper</summary><pre><code>{{de2025identifying}}</code></pre></details>
+    </div>
+  </article>
+  <article class="work-entry paper" id="hippocampal-state-space-models">
+    <img class="project-image" src="images/projects/ps4-control-cost.png" alt="Control cost across 200 cumulated time steps, with a perturbation marked at time step 100" width="160" height="160" loading="lazy" decoding="async" />
+    <div class="project-content">
+    <div class="entry-heading"><h3>pS4: periodic structured state-space models of hippocampal dynamics</h3><span class="entry-date">{{yearFromBib:garg2024modeling}}</span></div>
+      <p class="work-meta">With V. Nema · Poster at NeurIPS ’24 Women in Machine Learning (WiML)</p>
+    <p>I introduced pS4, a periodic structured state-space model for low-dimensional hippocampal population activity. It treats the activity as a linear time-varying control system aligned to ongoing oscillations, using control cost and feedback gains to compare the learned dynamics before and after stimulus perturbation.</p>
+    <p class="project-tldr"><strong>TL;DR:</strong> pS4 models oscillation-aligned hippocampal dynamics as a periodic control system.</p>
+    <details><summary>BibTeX for workshop paper</summary><pre><code>{{garg2024modeling}}</code></pre></details>
+    </div>
+  </article>
+  <article class="work-entry paper" id="orbitofrontal-dynamics">
+    <img class="project-image" src="images/projects/generic-neuroscience.png" alt="Abstract illustration of a neural network" width="160" height="160" loading="lazy" decoding="async" />
+    <div class="project-content">
+    <div class="entry-heading"><h3>Orbitofrontal dynamics in social interaction and reward</h3><span class="entry-date">2024</span></div>
+      <p class="work-meta">Southern Illinois University · with Duda Kvitsiani and Ebru Demir</p>
+    <p>With Duda Kvitsiani and Ebru Demir at Southern Illinois University, I analysed calcium-imaging recordings and trained recurrent neural networks to study orbitofrontal activity during social interaction and water reward.</p>
+    <p class="project-tldr"><strong>TL;DR:</strong> Used recordings and neural networks to study how orbitofrontal populations represent social and reward events.</p>
+    </div>
+  </article>
+  <article class="work-entry paper" id="hippocampal-criticality">
+    <div class="project-image project-image-criticality">
+      <span class="project-image-criticality-crop">
+        <img src="images/projects/criticality-awake-ripples.jpg" alt="Avalanche-size probability during awake hippocampal ripple epochs at three standard-deviation thresholds" loading="lazy" decoding="async" />
+      </span>
+    </div>
+    <div class="project-content">
+    <div class="entry-heading"><h3>Criticality in hippocampal dynamics</h3><span class="entry-date">{{yearFromBib:garg2023mixed}}</span></div>
+      <p class="work-meta">Independent research · Poster at SfN ’24</p>
+    <p>I tested whether hippocampal sharp-wave ripples relate to neuronal criticality in public recordings. I measured avalanches and branching behaviour across awake and sleep states and found mixed signatures of subcritical dynamics.</p>
+    <p class="project-tldr"><strong>TL;DR:</strong> Hippocampal activity showed mixed signs of subcritical dynamics across wake and sleep.</p>
+    <p><a href="https://doi.org/10.1101/2023.10.30.564597">Read the preprint</a></p>
+    <details><summary>BibTeX for preprint</summary><pre><code>{{garg2023mixed}}</code></pre></details>
+    </div>
+  </article>
+  <article class="work-entry paper" id="astrocytic-up-down-states">
+    <div class="project-image project-image-panel">
+      <span class="project-image-panel-crop">
+        <img src="images/projects/astrocyte-up-down-stability.jpg" alt="Three-dimensional map of the model's time in the Up state across beta, theta E, and theta A-d parameter values" loading="lazy" decoding="async" />
+      </span>
+    </div>
+    <div class="project-content">
+    <div class="entry-heading"><h3>Astrocytic control of cortical Up–Down states</h3><span class="entry-date">{{yearFromBib:verma2023computational}}</span></div>
+      <p class="work-meta">With Jay Verma · Poster at The Fourth International Convention on the Mathematics of Neuroscience and AI ’23</p>
+    <p>We extended an existing model of cortical Up–Down dynamics by adding depolarizing and hyperpolarizing astrocyte populations. Sensitivity and stability analyses identified a bistable regime and showed that excitatory population thresholds and adaptation strength had the strongest influence on the model’s dynamics.</p>
+    <p class="project-tldr"><strong>TL;DR:</strong> Tested whether hyperpolarizing astrocytes can support stable cortical Up–Down dynamics.</p>
+    <p><a href="https://doi.org/10.1101/2023.10.16.562461">Read the preprint</a></p>
+    <details><summary>BibTeX for preprint</summary><pre><code>{{verma2023computational}}</code></pre></details>
+    </div>
+  </article>
+  <article class="work-entry paper" id="caltech-sensory-neurons">
+    <div class="project-image-pair">
+      <img class="project-image" src="images/projects/caltech-sensory-neurons.png" alt="Grayscale fluorescence image of stained sensory neurons" width="160" height="77" loading="lazy" decoding="async" />
+      <img class="project-image" src="images/projects/caltech-sensory-neurons-second.png" alt="Orange fluorescence image of a stained nematode" width="160" height="77" loading="lazy" decoding="async" />
+    </div>
+    <div class="project-content">
+      <div class="entry-heading"><h3>Sensory neurons in <em>Steinernema hermaphroditum</em></h3><span class="entry-date">{{yearFromBib:garg2022dii}}</span></div>
+      <p class="work-meta">Caltech SURF · with Chieh-Hsiang Tan and Paul W. Sternberg</p>
+      <p>I developed a DiI fluorescence staining protocol for head sensory neurons in <em>Steinernema hermaphroditum</em> and compared their positions with those in <em>C. elegans</em>.</p>
+      <p class="project-tldr"><strong>TL;DR:</strong> A staining protocol made the nematode's sensory neurons easier to identify and compare.</p>
+      <p><a href="https://doi.org/10.17912/micropub.biology.000516">Read the paper</a></p>
+      <details><summary>BibTeX for paper</summary><pre><code>{{garg2022dii}}</code></pre></details>
+    </div>
+  </article>
+  </div>
+</section>

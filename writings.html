@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Papers, preprints, and workshop contributions by Pranjal Garg, organized by topic."
+    />
+    <meta name="theme-color" content="#262829" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Writings — Pranjal Garg" />
+    <meta
+      property="og:description"
+      content="Papers, preprints, and workshop contributions by Pranjal Garg, organized by topic."
+    />
+    <title>Writings — Pranjal Garg</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/inter-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="assets/neural-background.js" defer></script>
+    <script src="assets/publications.js" defer></script>
+    <link rel="canonical" href="https://neurogarg.github.io/writings.html" />
+    <meta
+      property="og:url"
+      content="https://neurogarg.github.io/writings.html"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://neurogarg.github.io/#person",
+            "name": "Pranjal Garg",
+            "url": "https://neurogarg.github.io/",
+            "sameAs": [
+              "https://github.com/neurogarg",
+              "https://scholar.google.com/citations?user=bkkyTJIAAAAJ&hl=en"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://neurogarg.github.io/#website",
+            "url": "https://neurogarg.github.io/",
+            "name": "Pranjal Garg",
+            "publisher": {
+              "@id": "https://neurogarg.github.io/#person"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://neurogarg.github.io/writings.html#page",
+            "url": "https://neurogarg.github.io/writings.html",
+            "name": "Writings | Pranjal Garg",
+            "isPartOf": {
+              "@id": "https://neurogarg.github.io/#website"
+            },
+            "about": {
+              "@id": "https://neurogarg.github.io/#person"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body id="top" class="neural-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Decorative AI-generated conceptual artwork; not microscopy or research data. -->
+    <div class="neural-backdrop" aria-hidden="true">
+      <div class="neural-art">
+        <img
+          class="neural-layer"
+          src="assets/neural/neuron.webp"
+          alt=""
+          decoding="async"
+        />
+        <img
+          class="neural-layer"
+          src="assets/neural/population.webp"
+          alt=""
+          decoding="async"
+        />
+        <img
+          class="neural-layer"
+          src="assets/neural/artificial.webp"
+          alt=""
+          decoding="async"
+        />
+      </div>
+    </div>
+    <div
+      class="neural-controls"
+      role="group"
+      aria-label="Background artwork scenes"
+      hidden
+    >
+      <button
+        class="neural-scene"
+        type="button"
+        data-scene="0"
+        aria-label="Biological neuron"
+        aria-current="step"
+      >
+        <span class="neural-scene-label">Biological neuron</span
+        ><span class="neural-scene-number" aria-hidden="true">1</span>
+      </button>
+      <button
+        class="neural-scene"
+        type="button"
+        data-scene="1"
+        aria-label="Population activity"
+      >
+        <span class="neural-scene-label">Population activity</span
+        ><span class="neural-scene-number" aria-hidden="true">2</span>
+      </button>
+      <button
+        class="neural-scene"
+        type="button"
+        data-scene="2"
+        aria-label="Neural network"
+      >
+        <span class="neural-scene-label">Neural network</span
+        ><span class="neural-scene-number" aria-hidden="true">3</span>
+      </button>
+    </div>
+
+    <header class="site-header page-width">
+      <a class="site-name" href="index.html">Pranjal Garg</a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="neuroscience.html">Neuroscience</a>
+        <a href="ai.html">AI</a>
+        <a href="others.html">Others</a>
+        <a href="writings.html" aria-current="page">Writings</a>
+        <details class="cv-menu">
+          <summary>CV</summary>
+          <div class="cv-menu-links">
+            <a href="data/Pranjal_Garg_Neuro.pdf">Neuroscience CV</a
+            ><a href="data/Pranjal_Garg_AI_Safety.pdf">AI Safety CV</a>
+          </div>
+        </details>
+      </nav>
+    </header>
+    <main id="main" class="page-width" tabindex="-1">
+      <header class="page-intro">
+        <h1>Writings</h1>
+        <p>
+          Papers, preprints, and workshop contributions, organized by topic.
+        </p>
+        <div class="link-row">
+          <a href="data/publications.bib" download>Download BibTeX</a
+          ><span aria-hidden="true">/</span
+          ><a
+            href="https://scholar.google.com/citations?user=bkkyTJIAAAAJ&amp;hl=en"
+            >Google Scholar</a
+          >
+        </div>
+      </header>
+      <div class="publication-filters" hidden>
+        <label for="topic-filter">Filter by topic</label
+        ><select id="topic-filter">
+          <option value="">All topics</option>
+          <option value="AI">AI</option>
+          <option value="Blogpost">Blogpost</option>
+          <option value="Humanities">Humanities</option>
+          <option value="Mechanistic Interpretability">
+            Mechanistic Interpretability
+          </option>
+          <option value="Medicine">Medicine</option>
+          <option value="Neuroscience">Neuroscience</option>
+          <option value="Perspectives">Perspectives</option>
+        </select>
+        <p id="publication-count" role="status" aria-live="polite"></p>
+      </div>
+      <section aria-labelledby="publication-list-title">
+        <h2 id="publication-list-title" class="sr-only">Writing list</h2>
+        <article
+          class="publication"
+          id="garg2026cotcontrol"
+          data-topics='["Blogpost","AI"]'
+        >
+          <div class="entry-heading">
+            <h3>CoT Control: The Word Disappears, but the Thought Does Not</h3>
+            <span class="entry-date">2026</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg</p>
+          <p class="work-meta">LessWrong</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Blogpost</li>
+            <li>AI</li>
+          </ul>
+          <a
+            href="https://www.lesswrong.com/posts/CWecvQoLDGWt6d35v/cot-control-the-word-disappears-but-the-thought-does-not"
+            >Read writing <span aria-hidden="true">↗</span></a
+          >
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@misc{garg2026cotcontrol,
+	author = {Garg, Pranjal},
+	year = {2026},
+	month = {mar 27},
+	publisher = {LessWrong},
+	title = {CoT {Control}: The {Word} {Disappears}, but the {Thought} {Does} {Not}},
+	url = {https://www.lesswrong.com/posts/CWecvQoLDGWt6d35v/cot-control-the-word-disappears-but-the-thought-does-not},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2026high"
+          data-topics='["AI","Mechanistic Interpretability"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              How High Is 0.6? Floors, Ceilings, and Headroom in
+              Interpretability Probing
+            </h3>
+            <span class="entry-date">2026</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg</p>
+          <p class="work-meta">arXiv preprint arXiv:2610.08544</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>AI</li>
+            <li>Mechanistic Interpretability</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2026high,
+	author = {Garg, Pranjal},
+	journal = {arXiv preprint arXiv:2610.08544},
+	year = {2026},
+	title = {How {High} {Is} 0.6? {Floors}, {Ceilings}, and {Headroom} in {Interpretability} {Probing}},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2026spontaneous"
+          data-topics='["AI","Mechanistic Interpretability"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Spontaneous Context Restoration: How Language Models Recover from
+              Corrupted Inputs
+            </h3>
+            <span class="entry-date">2026</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg, Jacob Beck</p>
+          <p class="work-meta">arXiv preprint arXiv:2609.35475</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>AI</li>
+            <li>Mechanistic Interpretability</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2026spontaneous,
+	author = {Garg, Pranjal and Beck, Jacob},
+	journal = {arXiv preprint arXiv:2609.35475},
+	year = {2026},
+	title = {Spontaneous {Context} {Restoration}: How {Language} {Models} {Recover} from {Corrupted} {Inputs}},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2026evidence"
+          data-topics='["Blogpost","AI"]'
+        >
+          <div class="entry-heading">
+            <h3>Spontaneous verbal evidence synthesis in LLMs</h3>
+            <span class="entry-date">2026</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg</p>
+          <p class="work-meta">LessWrong</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Blogpost</li>
+            <li>AI</li>
+          </ul>
+          <a
+            href="https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms"
+            >Read writing <span aria-hidden="true">↗</span></a
+          >
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@misc{garg2026evidence,
+	author = {Garg, Pranjal},
+	year = {2026},
+	month = {10},
+	publisher = {LessWrong},
+	title = {Spontaneous verbal evidence synthesis in {LLMs}},
+	url = {https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="de2025identifying"
+          data-topics='["Neuroscience","AI"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Identifying patterns differing between high-dimensional datasets
+              with generalized contrastive PCA
+            </h3>
+            <span class="entry-date">2025</span>
+          </div>
+          <p class="publication-authors">
+            Eliezyer Fermino Oliveira, Pranjal Garg, Jens Hjerling-Leffler,
+            Renata Batista-Brito, Lucas Sjulson
+          </p>
+          <p class="work-meta">PLOS Computational Biology</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+            <li>AI</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{de2025identifying,
+	author = {de Oliveira, Eliezyer Fermino and Garg, Pranjal and Hjerling-Leffler, Jens and Batista-Brito, Renata and Sjulson, Lucas},
+	journal = {PLOS Computational Biology},
+	number = {2},
+	year = {2025},
+	pages = {e1012747},
+	publisher = {Public Library of Science San Francisco, CA USA},
+	title = {Identifying patterns differing between high-dimensional datasets with generalized contrastive {PCA}},
+	volume = {21},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2024modeling"
+          data-topics='["Neuroscience"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Modeling Neural Dynamics Using Periodic Structured State-Space
+              Models
+            </h3>
+            <span class="entry-date">2024</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg, V. Nema</p>
+          <p class="work-meta">
+            NeurIPS 2024 Workshop on Women in Machine Learning (WiML)
+          </p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+          </ul>
+          <a href="https://neurips.cc/virtual/2024/109052"
+            >Read writing <span aria-hidden="true">↗</span></a
+          >
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@inproceedings{garg2024modeling,
+	author = {Garg, Pranjal and Nema, V.},
+	booktitle = {NeurIPS 2024 {Workshop} on {Women} in {Machine} {Learning} ({WiML})},
+	year = {2024},
+	title = {Modeling {Neural} {Dynamics} {Using} {Periodic} {Structured} {State}-{Space} {Models}},
+	url = {https://neurips.cc/virtual/2024/109052},
+	howpublished = {https://neurips.cc/virtual/2024/109052},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2024mindgala"
+          data-topics='["Neuroscience","Humanities"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              The Mind Gala Science Writing Mentorship Program: Time-Constrained
+              Online Matched Group Mentoring Approach to Writing a Popular
+              Science Book
+            </h3>
+            <span class="entry-date">2024</span>
+          </div>
+          <p class="publication-authors">
+            P. Garg, J. Trisal, A. Krishnamurthy, R. Chunduri, D. Satav, S.
+            Muthiah, H. J. Anand, P. Thakur
+          </p>
+          <p class="work-meta">Neuroscience 2024 Abstracts</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+            <li>Humanities</li>
+          </ul>
+          <a
+            href="https://www.abstractsonline.com/pp8/#!/20433/presentation/25589"
+            >Read writing <span aria-hidden="true">↗</span></a
+          >
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@inproceedings{garg2024mindgala,
+	address = {Chicago, Illinois},
+	author = {Garg, P. and Trisal, J. and Krishnamurthy, A. and Chunduri, R. and Satav, D. and Muthiah, S. and Anand, H. J. and Thakur, P.},
+	booktitle = {Neuroscience 2024 {Abstracts}},
+	year = {2024},
+	month = {10},
+	organization = {Society for Neuroscience},
+	title = {The {Mind} {Gala} {Science} {Writing} {Mentorship} {Program}: Time-{Constrained} {Online} {Matched} {Group} {Mentoring} {Approach} to {Writing} a {Popular} {Science} {Book}},
+	url = {https://www.abstractsonline.com/pp8/#!/20433/presentation/25589},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="verma2023computational"
+          data-topics='["Neuroscience"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Computational Modeling of Hyperpolarizing Astrocytic Influence on
+              Cortical Up-Down State Transitions
+            </h3>
+            <span class="entry-date">2023</span>
+          </div>
+          <p class="publication-authors">Jay Verma, Pranjal Garg</p>
+          <p class="work-meta">bioRxiv</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{verma2023computational,
+	author = {Verma, Jay and Garg, Pranjal},
+	journal = {bioRxiv},
+	year = {2023},
+	pages = {2023--10},
+	publisher = {Cold Spring Harbor Laboratory},
+	title = {Computational {Modeling} of {Hyperpolarizing} {Astrocytic} {Influence} on {Cortical} {Up}-{Down} {State} {Transitions}},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2023exploring"
+          data-topics='["Humanities"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Exploring the relationship between popular culture and perceptions
+              of social standing in Science, Technology, Engineering,
+              Mathematics, and Medicine (STEMM) careers: a pilot study using
+              path analysis
+            </h3>
+            <span class="entry-date">2023</span>
+          </div>
+          <p class="publication-authors">
+            Pranjal Garg, Rithika Chunduri, Chinmayi Balusu
+          </p>
+          <p class="work-meta">
+            Proceedings of the Annual Meeting of the Cognitive Science Society
+          </p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Humanities</li>
+          </ul>
+          <a href="https://escholarship.org/uc/item/05m8h9t1"
+            >Read writing <span aria-hidden="true">↗</span></a
+          >
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2023exploring,
+	author = {Garg, Pranjal and Chunduri, Rithika and Balusu, Chinmayi},
+	journal = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+	year = {2023},
+	title = {Exploring the relationship between popular culture and perceptions of social standing in {Science}, {Technology}, {Engineering}, {Mathematics}, and {Medicine} ({STEMM}) careers: a pilot study using path analysis},
+	url = {https://escholarship.org/uc/item/05m8h9t1},
+	howpublished = {https://escholarship.org/uc/item/05m8h9t1},
+	volume = {45},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2023mixed"
+          data-topics='["Neuroscience"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Mixed signatures for subcritical dynamics in rodent hippocampus
+              during sleep and awake epochs
+            </h3>
+            <span class="entry-date">2023</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg</p>
+          <p class="work-meta">bioRxiv</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2023mixed,
+	author = {Garg, Pranjal},
+	journal = {bioRxiv},
+	year = {2023},
+	pages = {2023--10},
+	publisher = {Cold Spring Harbor Laboratory},
+	title = {Mixed signatures for subcritical dynamics in rodent hippocampus during sleep and awake epochs},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2023tales"
+          data-topics='["Neuroscience","Humanities"]'
+        >
+          <div class="entry-heading">
+            <h3>Tales of Neuroscience</h3>
+            <span class="entry-date">2023</span>
+          </div>
+          <p class="publication-authors">Edited by P. Garg</p>
+          <p class="work-meta">The Mind Gala</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+            <li>Humanities</li>
+          </ul>
+          <a href="https://books.google.com/books?id=zkq8EAAAQBAJ"
+            >Read writing <span aria-hidden="true">↗</span></a
+          >
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@book{garg2023tales,
+	editor = {Garg, P.},
+	year = {2023},
+	publisher = {The Mind Gala},
+	title = {Tales of {Neuroscience}},
+	url = {https://books.google.com/books?id=zkq8EAAAQBAJ},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="singhal2022awareness"
+          data-topics='["Medicine"]'
+        >
+          <div class="entry-heading">
+            <h3>Awareness of the malaria vaccine in India</h3>
+            <span class="entry-date">2022</span>
+          </div>
+          <p class="publication-authors">
+            Chinar Singhal, Taiwo O Aremu, Pranjal Garg, Kunal Shah, Olihe N
+            Okoro
+          </p>
+          <p class="work-meta">Cureus</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Medicine</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{singhal2022awareness,
+	author = {Singhal, Chinar and Aremu, Taiwo O and Garg, Pranjal and Shah, Kunal and Okoro, Olihe N},
+	journal = {Cureus},
+	number = {9},
+	year = {2022},
+	pages = {e29210},
+	title = {Awareness of the malaria vaccine in {India}},
+	volume = {14},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="muthiah2022basic"
+          data-topics='["Neuroscience","Medicine","Perspectives"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Basic and clinical neuroscience: a tale of dreadful trade in India
+            </h3>
+            <span class="entry-date">2022</span>
+          </div>
+          <p class="publication-authors">
+            Saidharshini Muthiah, Shreshth Shekhar, Pranjal Garg
+          </p>
+          <p class="work-meta">Neurological Sciences</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+            <li>Medicine</li>
+            <li>Perspectives</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{muthiah2022basic,
+	author = {Muthiah, Saidharshini and Shekhar, Shreshth and Garg, Pranjal},
+	journal = {Neurological Sciences},
+	number = {6},
+	year = {2022},
+	pages = {3995--3996},
+	publisher = {Springer International Publishing},
+	title = {Basic and clinical neuroscience: a tale of dreadful trade in {India}},
+	volume = {43},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2022chasing"
+          data-topics='["Neuroscience","Perspectives"]'
+        >
+          <div class="entry-heading">
+            <h3>Chasing engrams in zebrafish (Danio rerio)</h3>
+            <span class="entry-date">2022</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg, Sumedha Sengupta</p>
+          <p class="work-meta">Journal of Neuroscience Research</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+            <li>Perspectives</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2022chasing,
+	author = {Garg, Pranjal and Sengupta, Sumedha},
+	journal = {Journal of Neuroscience Research},
+	year = {2022},
+	title = {Chasing engrams in zebrafish ({Danio} rerio)},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2022dii"
+          data-topics='["Neuroscience"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              DiI staining of sensory neurons in the entomopathogenic nematode
+              Steinernema hermaphroditum
+            </h3>
+            <span class="entry-date">2022</span>
+          </div>
+          <p class="publication-authors">
+            Pranjal Garg, Chieh-Hsiang Tan, Paul W Sternberg
+          </p>
+          <p class="work-meta">microPublication biology</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2022dii,
+	author = {Garg, Pranjal and Tan, Chieh-Hsiang and Sternberg, Paul W},
+	journal = {microPublication biology},
+	year = {2022},
+	pages = {10--17912},
+	title = {DiI staining of sensory neurons in the entomopathogenic nematode {Steinernema} hermaphroditum},
+	volume = {2022},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2022introducing"
+          data-topics='["Neuroscience","Medicine","Perspectives"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Introducing stimulogenetics, unraveling pertinent semantic
+              ambiguity, and determining clinical relevance among novel
+              neuromodulation strategies
+            </h3>
+            <span class="entry-date">2022</span>
+          </div>
+          <p class="publication-authors">
+            Pranjal Garg, Saidharshini Muthiah, Sumedha Sengupta
+          </p>
+          <p class="work-meta">Biology Methods and Protocols</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Neuroscience</li>
+            <li>Medicine</li>
+            <li>Perspectives</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2022introducing,
+	author = {Garg, Pranjal and Muthiah, Saidharshini and Sengupta, Sumedha},
+	journal = {Biology Methods and Protocols},
+	number = {1},
+	year = {2022},
+	title = {Introducing stimulogenetics, unraveling pertinent semantic ambiguity, and determining clinical relevance among novel neuromodulation strategies},
+	volume = {7},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2022iot"
+          data-topics='["Medicine"]'
+        >
+          <div class="entry-heading">
+            <h3>IoT-based disease prediction</h3>
+            <span class="entry-date">2022</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg, Sejal Gupta</p>
+          <p class="work-meta">
+            Smart and Secure Internet of Healthcare Things
+          </p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Medicine</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@inbook{garg2022iot,
+	author = {Garg, Pranjal and Gupta, Sejal},
+	booktitle = {Smart and {Secure} {Internet} of {Healthcare} {Things}},
+	year = {2022},
+	pages = {17--30},
+	publisher = {CRC Press},
+	title = {IoT-based disease prediction},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2022issue"
+          data-topics='["Medicine","Perspectives"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Issue of poor student-faculty relationship in Indian medical
+              education
+            </h3>
+            <span class="entry-date">2022</span>
+          </div>
+          <p class="publication-authors">
+            Pranjal Garg, Saidharshini Muthiah, Chirag Singla
+          </p>
+          <p class="work-meta">Canadian Medical Education Journal</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Medicine</li>
+            <li>Perspectives</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2022issue,
+	author = {Garg, Pranjal and Muthiah, Saidharshini and Singla, Chirag},
+	journal = {Canadian Medical Education Journal},
+	number = {5},
+	year = {2022},
+	pages = {114},
+	title = {Issue of poor student-faculty relationship in {Indian} medical education},
+	volume = {13},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2020my"
+          data-topics='["Medicine","Perspectives"]'
+        >
+          <div class="entry-heading">
+            <h3>My ideal medical college</h3>
+            <span class="entry-date">2020</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg</p>
+          <p class="work-meta">Journal of Medical Evidence</p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Medicine</li>
+            <li>Perspectives</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2020my,
+	author = {Garg, Pranjal},
+	journal = {Journal of Medical Evidence},
+	number = {1},
+	year = {2020},
+	pages = {61--64},
+	publisher = {Medknow},
+	title = {My ideal medical college},
+	volume = {1},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="garg2019maintaining"
+          data-topics='["Medicine"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              Is maintaining sleep hygiene enough for good sleep? A
+              socioeconomic correlation study in north India.
+            </h3>
+            <span class="entry-date">2019</span>
+          </div>
+          <p class="publication-authors">
+            Pranjal Garg, Rajesh Kathrotia, Ashwini A Mahadule, Annu Kumari,
+            Arun Goel
+          </p>
+          <p class="work-meta">
+            European Journal of Molecular &amp; Clinical Medicine (EJMCM)
+          </p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>Medicine</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@article{garg2019maintaining,
+	author = {Garg, Pranjal and Kathrotia, Rajesh and Mahadule, Ashwini A and Kumari, Annu and Goel, Arun},
+	journal = {European Journal of Molecular \&amp; Clinical Medicine (EJMCM)},
+	number = {09},
+	year = {2019},
+	pages = {2020},
+	title = {Is maintaining sleep hygiene enough for good sleep? {A} socioeconomic correlation study in north {India}.},
+	volume = {7},
+}
+
+</code></pre>
+          </details>
+        </article>
+        <article
+          class="publication"
+          id="gargcontrol"
+          data-topics='["AI","Mechanistic Interpretability"]'
+        >
+          <div class="entry-heading">
+            <h3>
+              A Control-Theoretic Account of Cognitive Effort in Language Models
+            </h3>
+            <span class="entry-date">Undated</span>
+          </div>
+          <p class="publication-authors">Pranjal Garg</p>
+          <p class="work-meta">
+            First Workshop on CogInterp: Interpreting Cognition in Deep Learning
+            Models
+          </p>
+          <ul class="topic-tags" aria-label="Topics">
+            <li>AI</li>
+            <li>Mechanistic Interpretability</li>
+          </ul>
+          <details>
+            <summary>BibTeX</summary>
+            <pre><code>@inproceedings{gargcontrol,
+	author = {Garg, Pranjal},
+	booktitle = {First {Workshop} on {CogInterp}: Interpreting {Cognition} in {Deep} {Learning} {Models}},
+	title = {A {Control}-{Theoretic} {Account} of {Cognitive} {Effort} in {Language} {Models}},
+}
+
+</code></pre>
+          </details>
+        </article>
+      </section>
+      <p id="no-publications" hidden>No writings match this topic.</p>
+    </main>
+    <footer class="site-footer page-width">
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>

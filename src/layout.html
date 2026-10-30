@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{description}}" />
+    <meta name="theme-color" content="#262829" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{description}}" />
+    <title>{{title}}</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/inter-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="assets/neural-background.js" defer></script>
+    {{scripts}}
+  </head>
+  <body id="top" class="neural-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Decorative AI-generated conceptual artwork; not microscopy or research data. -->
+    <div class="neural-backdrop" aria-hidden="true">
+      <div class="neural-art">
+        <img
+          class="neural-layer"
+          src="assets/neural/neuron.webp"
+          alt=""
+          decoding="async"
+        />
+        <img
+          class="neural-layer"
+          src="assets/neural/population.webp"
+          alt=""
+          decoding="async"
+        />
+        <img
+          class="neural-layer"
+          src="assets/neural/artificial.webp"
+          alt=""
+          decoding="async"
+        />
+      </div>
+    </div>
+    <div
+      class="neural-controls"
+      role="group"
+      aria-label="Background artwork scenes"
+      hidden
+    >
+      <button
+        class="neural-scene"
+        type="button"
+        data-scene="0"
+        aria-label="Biological neuron"
+        aria-current="step"
+      >
+        <span class="neural-scene-label">Biological neuron</span
+        ><span class="neural-scene-number" aria-hidden="true">1</span>
+      </button>
+      <button
+        class="neural-scene"
+        type="button"
+        data-scene="1"
+        aria-label="Population activity"
+      >
+        <span class="neural-scene-label">Population activity</span
+        ><span class="neural-scene-number" aria-hidden="true">2</span>
+      </button>
+      <button
+        class="neural-scene"
+        type="button"
+        data-scene="2"
+        aria-label="Neural network"
+      >
+        <span class="neural-scene-label">Neural network</span
+        ><span class="neural-scene-number" aria-hidden="true">3</span>
+      </button>
+    </div>
+
+    <header class="site-header page-width">
+      <a class="site-name" href="index.html">Pranjal Garg</a>
+      <nav aria-label="Primary navigation">{{navigation}}</nav>
+    </header>
+    <main id="main" class="page-width" tabindex="-1">{{content}}</main>
+    <footer class="site-footer page-width">
+
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>

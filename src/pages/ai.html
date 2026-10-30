@@ -1,0 +1,255 @@
+<header class="page-intro">
+  <h1>AI Projects</h1>
+</header>
+
+<section class="section" aria-label="AI projects">
+  <div class="work-list">
+
+
+<article class="work-entry paper" id="co-adaptive-intelligence">
+      <img
+        class="project-image"
+        src="images/projects/coadaptive-intelligence.png"
+        alt=""
+        width="160"
+        height="160"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="project-content">
+        <div class="entry-heading">
+          <h3>Relative Learning Rates Shape Compositional
+          Computation Across Spiking and Artificial Agents</h3>
+          <span class="entry-date">Ongoing</span>
+        </div>
+        <p class="work-meta">With Christian Hoang · In submission to a workshop · Full submission in preparation</p>
+
+        <p>
+          We study how spiking (LIF) and conventional neural networks (tanh) divide computation when learning to 
+          control an object together under a shared reward.
+          When learning rates differ substantially, the slower agent learns to stay still while the 
+          faster agent takes over the task.
+          At equal learning rates, both agents contribute and jointly represent the goal more accurately, 
+          but this does not improve generalization.
+          Information also passes between agents through shared movement.
+        </p>
+      <p class="project-tldr"><strong>TL;DR:</strong> In a two-agent system, relative learning rates determine who does the work, while
+        shared representations and information transfer do not necessarily 
+        imply better generalization.</p>
+      </div>
+</article>
+
+
+<article class="work-entry paper" id="spontaneous-context-restoration">
+      <img
+        class="project-image"
+        src="images/projects/context-restoration.png"
+        alt=""
+        width="190"
+        height="190"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="project-content">
+        <div class="entry-heading">
+          <h3><a href="https://arxiv.org/abs/2609.35475">Spontaneous Context Restoration: How Language Models Recover from Corrupted Inputs</a></h3>
+          <span class="entry-date">{{yearFromBib:garg2026spontaneous}}</span>
+        </div>
+        <p class="work-meta">
+          With Jacob Beck (Oracle) · In submission 
+        </p>
+
+        <p>
+          Language models can sometimes give correct answers even when parts of their input are missing, misspelled,
+          or incorrect, without being explicitly trained to handle such errors.
+          We study how this happens inside the models and find that information from the damaged input is gradually 
+          processed and brought together to produce an answer.
+          We also show that early internal activity can help predict when a model is likely to fail, even before it
+          generates an answer.
+          Finally, training models on moderately corrupted inputs makes them more reliable and changes how they 
+          internally respond to errors.
+        </p>
+      <p class="project-tldr"><strong>TL;DR:</strong> We study when language models recover from corrupted inputs 
+        and whether intermediate representations predict recovery before the model produces its answer.</p>
+      <details><summary>BibTeX for paper</summary><pre><code>{{garg2026spontaneous}}</code></pre></details>
+      </div>
+</article>
+
+
+<article class="work-entry paper" id="interpretability-probes">
+      <img
+        class="project-image"
+        src="images/projects/probes.png"
+        alt=""
+        width="160"
+        height="160"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="project-content">
+        <div class="entry-heading">
+          <h3><a href="https://arxiv.org/abs/2610.08544">How High Is 0.6? Floors, Ceilings, and Headroom in Interpretability Probing</a></h3>
+          <span class="entry-date">{{yearFromBib:garg2026high}}</span>
+        </div>
+        <p class="work-meta">Independent research · In submission </p>
+        <p>
+          Researchers often use linear probes on hidden representations to find out what AI models know, but high scores can be misleading.
+          I proposed comparing these scores against what can already be predicted from simple information 
+          (the floor) and what is possible using all available information (the ceiling).
+          I showed that a model's score can drop simply because the data become less informative, 
+          not because the model has learned less.
+          Applying this approach to language models, biological data, chemistry data and neuroscience data reveals that some impressive 
+          results reflect genuine additional information, while others can largely be explained by simple clues.
+        </p>
+        <p class="project-tldr"><strong>TL;DR:</strong> A high score doesn't necessarily mean an AI model has 
+          learned something meaningful. We need to compare it against reference points.
+        </p>
+        <details><summary>BibTeX for paper</summary><pre><code>{{garg2026high}}</code></pre></details>
+      </div>
+    </article>
+
+
+
+
+<article class="work-entry paper" id="metalex">
+      <img
+        class="project-image"
+        src="images/projects/metalex.png"
+        alt=""
+        width="160"
+        height="160"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="project-content">
+        <div class="entry-heading">
+          <h3><a href="https://openreview.net/pdf?id=9UsKZKMhT">MetaLex: metaphors across vision and language</a></h3>
+          <span class="entry-date">2026</span>
+        </div>
+        <p class="work-meta">
+          A*STAR Centre for Frontier AI Research · With Cheston Tan · In submission
+        </p>
+
+        <p>
+          Can vision-language models (VLMs) understand the meaning of a metaphor just by looking at a picture? 
+          For example, can they connect an 
+          image of a black sheep to the idea of an outcast?
+          We introduce <a href="https://huggingface.co/datasets/metalex001/metalex">MetaLex</a>, a collection of around 500 metaphors, to test this ability across 14 VLMs.
+          We find that 11 of 14 models perform significantly worse with images than with text, even when they 
+          already know the metaphor's meaning.
+          Turning images into written descriptions sometimes helps, but surprisingly, adding images to text can 
+          make the models perform worse.
+        </p>
+      <p class="project-tldr"><strong>TL;DR:</strong> VLMs often understand metaphors better through text than pictures, showing that knowing something doesn't mean they can recognize it equally well in different forms.</p>
+              </div>
+  </article>
+
+
+<article class="work-entry paper" id="gargcontrol">
+  <img
+        class="project-image"
+        src="images/projects/cog_interp.png"
+        alt=""
+        width="160"
+        height="160"
+        loading="lazy"
+        decoding="async"
+      />    
+  
+  
+  <div class="project-content">
+        <div class="entry-heading">
+          <h3><a href="https://openreview.net/pdf?id=cbrdNqtd9y">A Control-Theoretic Account of Cognitive Effort in
+Language Models</a></h3>
+          <span class="entry-date">{{yearFromBib:gargcontrol}}</span>
+        </div>
+        <p class="work-meta">
+          Independent research · First Workshop on CogInterp
+        </p>
+
+        <p>
+          Why do some tasks require more effort from AI models than others?
+I use ideas from control theory to study how information moves through a language model and how difficult 
+it is to change its internal activity.
+I find that further RL training changes these internal pathways, making previously easy directions harder
+ to reach and increasing the estimated effort.
+Surprisingly, ordinary conversations appear harder than mathematical problems under my measure,
+suggesting that AI difficulty may differ from human intuition.
+        </p>
+      <p class="project-tldr"><strong>TL;DR:</strong> RL training changes how easily information moves through AI models, and what seems easy to humans may not be easy for AI.</p>
+        <details><summary>BibTeX for workshop paper</summary><pre><code>{{gargcontrol}}</code></pre></details>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+<section class="section" aria-labelledby="technical-writing-title">
+  <h2 id="technical-writing-title">Blog posts on LessWrong</h2>
+  <div class="work-list">
+<article class="work-entry paper" id="evidence-synthesis">
+  <img
+        class="project-image"
+        src="images/projects/evid.jpg"
+        alt=""
+        width="160"
+        height="160"
+        loading="lazy"
+        decoding="async"
+      />        
+  
+  
+  <div class="project-content">
+        <div class="entry-heading">
+          <h3><a href="https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms">Spontaneous verbal evidence synthesis in LLMs</a></h3>
+          <span class="entry-date">{{yearFromBib:garg2026evidence}}</span>
+        </div>
+        <p class="work-meta">
+          Independent research 
+        </p>
+
+        <p>
+          If one friend says the strawberries are definitely great and another says they are likely terrible, how should you weigh the two?
+I tested how five language models combine statements that pair an evaluation such as "great" with a certainty word such as "definitely" or "likely".
+Models gave more weight to more certain statements, and simple aggregation rules partly predicted their choices, but no single rule explained every model.
+Adding numeric scores next to each statement made models follow these rules more closely.
+When the numbers were shuffled to conflict with the words, most models became inconsistent, while Gemini followed the numbers and partly ignored the words, suggesting that inserted numbers could be used to manipulate a model's judgment.
+        </p>
+        <details><summary>BibTeX for blog post</summary><pre><code>{{garg2026evidence}}</code></pre></details>
+      </div>
+    </article>
+
+
+<article class="work-entry paper" id="gargcotcontrol">
+  <img
+        class="project-image"
+        src="images/projects/lwcot.png"
+        alt=""
+        width="160"
+        height="160"
+        loading="lazy"
+        decoding="async"
+      />        
+  
+  
+  <div class="project-content">
+        <div class="entry-heading">
+          <h3><a href="https://www.lesswrong.com/posts/CWecvQoLDGWt6d35v/cot-control-the-word-disappears-but-the-thought-does-not">COT control: The Word Disappears, but the Thought Does Not</a></h3>
+          <span class="entry-date">{{yearFromBib:garg2026cotcontrol}}</span>
+        </div>
+        <p class="work-meta">
+          Independent research 
+        </p>
+
+        <p>
+          Can AI models avoid thinking about something when explicitly told not to mention it?
+We tested two reasoning models on 150 questions, asking them to avoid certain words and tracking how closely their reasoning stayed related to those concepts.
+We found that models struggled to avoid the words, and even when they succeeded, their reasoning often remained closely related to the forbidden concepts.
+The question itself appeared to influence the reasoning much more than the instruction, suggesting that monitoring meaning could reveal things that simple keyword checks miss.
+        </p>
+        <details><summary>BibTeX for blog post</summary><pre><code>{{garg2026cotcontrol}}</code></pre></details>
+      </div>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+{
+  "name": "pranjal-garg-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A small static academic website with BibTeX publications.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "npm run build && node scripts/serve.mjs",
+    "check": "npm run build && html-validate *.html && node scripts/check.mjs",
+    "test": "npm run check && playwright test",
+    "format": "prettier --write src scripts tests assets/*.js style.css package.json README.md"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@citation-js/core": "0.9.0",
+    "@citation-js/plugin-bibtex": "0.9.0",
+    "@playwright/test": "1.63.0",
+    "html-validate": "11.16.1",
+    "prettier": "3.9.9"
+  }
+}
