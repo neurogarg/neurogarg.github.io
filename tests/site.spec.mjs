@@ -16,7 +16,7 @@ const topic = recordTopics[0]?.[0] || "Other";
 const countForTopic = recordTopics.filter((topics) =>
   topics.includes(topic),
 ).length;
-const routes = ["index", "neuroscience", "ai", "others", "research", "writings"];
+const routes = ["index", "neuroscience", "ai", "others", "writings"];
 for (const route of routes) {
   test(
     route + ": responsive, accessible, and no failed assets",
@@ -116,6 +116,9 @@ test("navigation, reduced motion, print, and deployment privacy", async ({
   expect((await request.get("/garg_cv_neuro.pdf")).status()).toBe(404);
   expect((await request.get("/pranjal_ai_research_cv_chronological.pdf")).status()).toBe(404);
   expect((await request.get("/cv.html")).status()).toBe(404);
+  const researchRedirect = await (await request.get("/research.html")).text();
+  expect(researchRedirect).toContain('content="0; url=index.html"');
+  expect(researchRedirect).toContain('rel="canonical" href="https://neurogarg.github.io/"');
 });
 
 test("CV dropdown and homepage link to both PDFs", async ({ page }) => {

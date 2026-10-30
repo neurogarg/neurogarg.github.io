@@ -20,7 +20,6 @@ The generated root HTML files also work with your existing static server or by o
 | Content                                | Source                        |
 | -------------------------------------- | ----------------------------- |
 | Bio, current position, interests, news | `src/pages/index.html`        |
-| Research and internships               | `src/pages/research.html`     |
 | Writings page introduction             | `src/pages/writings.html`     |
 | Publication records and topics         | `data/publications.bib`       |
 | Neuroscience CV PDF                    | `data/Pranjal_Garg_Neuro.pdf` |
@@ -77,5 +76,5 @@ The development server binds to localhost and is intended for preview. Use a sta
 - The bibliography contains clearly labeled sample entries at your request.
 - Confirm the NERF internship status; the supplied CV described it as incoming.
 - The Neuroscience CV’s Project Encephalon status may differ from the requested past-work label on the website.
-- The existing profile and project images are placeholders, retained to preserve the design.
+- Project imagery is stored in `images/projects/`; large display images are resized WebP files for fast page loads.
 

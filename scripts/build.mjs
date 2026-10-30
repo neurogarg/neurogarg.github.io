@@ -30,11 +30,6 @@ const pages = [
     "Earlier projects, scientific perspectives, medical education, and past work.",
   ],
   [
-    "research",
-    "Research",
-    "Research in ML interpretability, neuroscience, and dynamical systems, including research internships.",
-  ],
-  [
     "writings",
     "Writings",
     "Papers, preprints, and workshop contributions by Pranjal Garg, organized by topic.",
@@ -172,9 +167,7 @@ for (const [slug, label, description] of pages) {
           '<a href="' +
           s +
           '.html"' +
-          (s === slug || (slug === "research" && s === "others")
-            ? ' aria-current="page"'
-            : "") +
+          (s === slug ? ' aria-current="page"' : "") +
           ">" +
           l +
           "</a>",
@@ -251,6 +244,24 @@ await writeFile(
   await format(legacyPublicationsRedirect, { parser: "html" }),
   "utf8",
 );
+const legacyResearchRedirect = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="0; url=index.html" />
+    <link rel="canonical" href="https://neurogarg.github.io/" />
+    <title>Pranjal Garg — Neuroscience &amp; machine learning</title>
+  </head>
+  <body>
+    <p>This page has moved to <a href="index.html">Pranjal Garg’s homepage</a>.</p>
+  </body>
+</html>`;
+await writeFile(
+  "research.html",
+  await format(legacyResearchRedirect, { parser: "html" }),
+  "utf8",
+);
 // Publish only this directory: source files, tools, and backups are never copied.
 const output = path.resolve(root, "dist");
 if (
@@ -263,6 +274,7 @@ await mkdir(output, { recursive: true });
 for (const [slug] of pages)
   await cp(slug + ".html", path.join("dist", slug + ".html"));
 await cp("publications.html", path.join("dist", "publications.html"));
+await cp("research.html", path.join("dist", "research.html"));
 for (const name of [
   "style.css",
   "robots.txt",

@@ -1,7 +1,7 @@
 import { readFile, access, readdir } from "node:fs/promises";
 import path from "node:path";
 import assert from "node:assert/strict";
-const pages = ["index", "neuroscience", "ai", "others", "research", "writings"];
+const pages = ["index", "neuroscience", "ai", "others", "writings"];
 for (const page of pages) {
   const html = await readFile(page + ".html", "utf8");
   assert.equal((html.match(/<h1[\s>]/g) || []).length, 1, page + ": one h1");
@@ -33,6 +33,12 @@ for (const page of pages) {
     }
   }
 }
+const researchRedirect = await readFile("research.html", "utf8");
+assert(
+  researchRedirect.includes('content="0; url=index.html"') &&
+    researchRedirect.includes('rel="canonical" href="https://neurogarg.github.io/"'),
+  "research.html must redirect and canonicalize to the homepage",
+);
 for (const [, ref] of (await readFile("style.css", "utf8")).matchAll(
   /url\(["']?([^"')]+)["']?\)/g,
 ))
